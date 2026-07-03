@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  padding: 10px 20px;
+  gap: 20px;
+  box-sizing: 0 0 20px gray;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 10px 8px;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  color: whitesmoke;
+  border: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+.content div {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+#add-button {
+  padding: 10px;
+  background-color: blue;
+  color: whitesmoke;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  transform: scale(1);
+}
+
+#add-button:active {
+  background-color: midnightblue;
+  transition: all 0.3s linear;
+  transform: scale(0.9);
+}
+input::placeholder {
+  font-size: 0.9rem;
+}
+
+#task-stored {
+  width: 100%;
+}
+#task-stored li {
+  color: whitesmoke;
+  background-color: #1a1a1a;
+  padding: 0.6rem;
+  list-style-type: none;
+  border-radius: 4px;
+  width: 100%;
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+
+#task-stored button {
+  background-color: red;
+  border: none;
+  outline: none;
+  color: whitesmoke;
+  padding: 4px;
+  border-radius: 4px;
+  transform: scale(1);
+}
+
+#task-stored button:active {
+  background-color: rgba(97, 9, 9, 0.555);
+  transform: scale(0.9);
+  transition: all 0.3s linear;
+}
+
+li.status {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
